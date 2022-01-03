@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    
+}
+body{
+    background-color: #f1f1f1;
+      unicode-bidi:bidi-override;
+  direction:rtl;
+}
+header {
+    background-color: #282a35;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    overflow: hidden;
+}
+header .enter{
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    z-index: 999;
+    align-items: center;
+}
+header .enter div{
+    margin:0 20px;
+}
+.dark a{
+    text-decoration: none;
+    color: #00e5c2 !important;
+    font-size: 25px;
+    padding: 15px 15px;
+    transition: 0.5s ease;
+}
+.enterance:hover ,.dark a:hover{
+   background-color:#111426;
+   
+}
+.enterance {
+    color: white;
+    letter-spacing: 2px;
+    padding: 20px 5px;
+    transition: 0.5s ease;
+}
+.text {
+    display: flex;
+    align-self: center;
+}
+.text a{
+padding: 20px 25px;
+color: white;
+transition: 0.8s ease;
+}
+.text a:hover{
+ background-color:#111426;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+}
+.home a {
+    padding: 20px 25px;
+    transition: 0.8s ease;
+}
+.home a:hover {
+    background-color:#111426;
+}
+.discrip {
+    text-align: center;
+    padding: 40px;
+}
+.discrip h2 {
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+.discrip p {
+    color: #595150;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.content {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  right: 200px;
+  max-width: 70em;
+  flex-wrap: wrap;
+}
+.card{
+  display: flex;
+  width: 21.25em;
+  overflow: hidden;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0px 5px 9px 3px rgb(1 1 1 / 20%);
+  margin: 30px 10px;
+  transition: 0.8s ease;
+  cursor: pointer;
+  animation: sweep 0.8s ease-in-out;
+    transition-property: box-shadow, background-color, transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  
+
+}
+.icon {
+  font-size: 10em;
+  text-align: center;
+  color: #3a6cf4;
+}
+.card:hover {
+  /* transform: scale(1.05); */
+    transform: translate(0,-25px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) ;
+    background-color: #f2efe3ff;
+}
+.info {
+    text-align: center;
+}
+.title {
+    text-align: center;
+    color: white;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background-color: #334466;
+    padding: 20px;
+   
+     
+}
+.explan {
+    padding: 30px 40px;
+    
+}
+.card a {
+    text-align: center;
+    padding: 0  20px 20px 20px;
+    color: gray;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; transform: translateX(-10px)}
+  100%  {opacity: 1; transform: translateX(0)}
+}
+.discription {
+    text-align: center;
+    margin: 80px;
+    position: relative;
+  right: 125px;
+  max-width: 70em;
+}
+.discription h2{
+margin-bottom: 20px;
+}
+.discription p {
+    font-size: 18px;
+    color: #70615c;
+    letter-spacing: 1px;
+     display: inline-block;
+}
+.courses .title {
+    background-color: #088a4b;
+    width: 100%;
+}
+.explan > h4 , .info > P{
+    text-align: center;
+    padding: 10px;
+    color: #5b5b5b;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+}
+.aim {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.aim>img {
+    width: 150px;
+    height: 150px;
+}
+.speech {
+    margin-right: 120px;
+}
+.speech p{
+    margin-top:20px ;
+    color: #5e625a;
+    width: 450px;
+    font-size: 18px;
+}
+.grip h3{
+    margin-top:20px ;
+    color: #e9d578;
+}
+.copyright , .copy {
+    display: flex;
+    justify-content: center;
+}
+.copy i , .copy h3 {
+    color: #e9d578;
+    padding: 10px;
+}
+.names img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.names {
+    margin-top: 50px;
+    background-color: #2f2f2f;
+    border-radius: 12px;
+    transition: 1.5s;
+}
+.names div{
+    display: flex;
+    margin: 25px;
+  animation: sweep 5s ease-in-out;
+  transition: 0.8s;
+}
+.names div h3{
+    display: flex;
+    margin:40px 20px;
+}
+
+.names div:hover {
+    transform: scale(1.1);
+}
+.names:hover {
+transform: translate(0,12px);
+}
