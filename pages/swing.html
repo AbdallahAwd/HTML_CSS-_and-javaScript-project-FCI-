@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/py.css">
+    <title>Swing</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <ul class="home">
+            <a href="../index.html">
+                <i class="fas fa-home"></i>
+            </a>
+            <a>
+                <i class="fas fa-search"></i>
+            </a>
+        </ul>
+
+        <ul class="text">
+            <a href="">
+                كتب
+            </a>
+            <a href="">
+                اسئله
+            </a>
+            <a href="">
+                مشاريع
+            </a>
+            <a href="">
+                مقالات
+            </a>
+            <a href="">
+                دورات
+            </a>
+
+        </ul>
+        <div class="enter">
+            <div class="dark">
+                <a href=""><i class="far fa-moon"></i></i></a>
+            </div>
+            <a class="enterance" href="">
+                دخول
+                <i class="fas fa-sign-in-alt"></i>
+            </a>
+        </div>
+    </header>
+    <!-- الرئيسيه -->
+    <div class="main-div">
+        <a href="../index.html" class="main"> &lt;&lt; الرئيسية</a>
+        <a href="" class="next">الدرس التالي &gt;&gt;</a>
+
+    </div>
+    <!-- exolation -->
+    <div class="pub">
+        <h1>
+            Swing
+        </h1>
+        <h2>
+            نظره عامه
+        </h2>
+    </div>
+    <section class="section">
+        <div class="nav">
+            <ul>
+                <a href="#ready">
+                    <li>هل أنا جاهز لتعلم <span>Swing</span>؟</li>
+                </a>
+                <a href="#what">
+                    <li>ما هي مكتبه <span>Swing</span>؟</li>
+                </a>
+                <a href="#pros">
+                    <li>بناء المكتبتين AWT و <span>Swing</span>
+                    </li>
+                </a>
+                <a href="#advantage">
+                    <li>الطريقة الصحيحة للتعلم
+                    </li>
+                </a>
+
+
+
+            </ul>
+        </div>
+        <div id="ready" class="ready">
+            <h2>
+                هل أنا جاهز لتعلم لغة <span><span>Swing</span></span>؟
+            </h2>
+            <p>
+                قبل أن تتعلم Swing يجب أن تتعلم الخوارزميات و لغة جافا للأسباب التالية:
+            </p> <br>
+            <ol>
+                <li>الخوارزميات تعلمك المنطق البرمجي و هي أول شيء يجب أن يتعلمه المبرمج قبل تعلم أي لغة برمجة.
+                </li>
+                <li>بما أنك تنوي تعلم المكتبة Swing فأنت بحاجة لتعلم لغة جافا التي هي أساس هذه المكتبة.
+                </li>
+                <li>لا تقلق إذا لم يسبق لك أن تعلمتهما لأننا شرحنا الخوارزميات و لغة جافا من الصفر.
+                </li>
+            </ol>
+            <a href="../pages/algoriths.html">تعلم الخوارزميات</a>
+            <a href="../pages/java.html">تعلم لغة جافا</a> <br> <br>
+            <p>
+                إذأ تم إعداد هذه الدورة لتكون مرجعا شاملا لكل شخص تعلم الخوارزمیات و لغة جافا من موقعنا و ينوي تعلم بناء
+                تطبيقات سطح
+                المكتب باستخدام المكتبة <span>Swing</span>.
+
+            </p>
+        </div>
+        <div id="what" class="ready">
+            <h2>
+                ما هي المكتبة <span>Swing</span>؟
+            </h2>
+            <p>
+                في البداية, واجهة المستخدم تسمى Graphical User Interface في اللغة الإنجليزية و تختصر بـ GUI.
+                المقصود من واجهة المستخدم هو بناء برامج فيها واجهات رسومية كما في الصورة التالية
+            </p> <br>
+            <img src="../images/java-w.png" alt=""> <br>
+            <p>
+                المكتبة AWT هي أول مكتبة تم تطويرها لبناء واجهة المستخدم.
+                بعدها تم تطوير المكتبة <span>Swing</span> و التي بدورها تعتمد على المكتبة AWT.
+
+                كلا الحزمتين السابقتين تحتويان على كلاسات كثيرة يمكن إستخدامها لبناء واجهة المستخدم.
+                في هذه الدورة سنركز على الكلاسات الموجودة في المكتبة <span>Swing</span> و نستخدم فقط ما نحتاجه من
+                المكتبة AWT.
+            </p>
+        </div>
+        <div id="pros" class="ready">
+            <h2>
+                بناء المكتبتين AWT و <span>Swing</span> </h2>
+            <p>
+                لتستخدم كلاسات المكتبة AWT عليك أن تفعل لهم import من هذا المسار java.awt. <br>
+                لتستخدم كلاسات المكتبة Swing عليك أن تفعل لهم import من هذا المسار javax.swing. <br>
+                الصورة التالية توضح لك كيف تم بناء المكتبتين AWT و <span>Swing</span>.
+            </p> <br>
+            <img src="../images/swing-ar.png" alt="" class="ss">
+            <p>
+                كل كلاس من هذه الكلاسات يمثل شيء معين من الأشياء التي يمكن إضافتها في واجهة المستخدم. <br>
+                <span>أمثلة</span>
+            </p>
+            <ol>
+                <li>
+                    الكلاس <span class="spana">JFrame</span> يستخدم لإضافة نافذة.
+                </li>
+                <li>الكلاس <span class="spana">JButton</span> يستخدم لإضافة زر.</li>
+                <li>الكلاس <span class="spana">JLabel</span> يستخدم لإضافة عنوان أو صورة.</li>
+                <li>الكلاس <span class="spana">JTextArea</span> يستخدم لإضافة فقرة.</li>
+                <li>الكلاس <span class="spana">JTextArea</span> يستخدم لإضافة فقرة.</li>
+                <li>الكلاس <span class="spana">JList</span> يستخدم لإضافة قائمة.</li>
+                <li>الكلاس <span class="spana">JTable</span> يستخدم لإضافة جدول إلخ.</li>
+            </ol>
+            <p>
+                إذاً كل كائن ننشئه من كلاس موجود في المكتبة Swing يعطينا شيء معين يمكن إضافته في واجهة المستخدم. <br>
+
+                في هذه الدورة ستتعرف على كل شيء يمكنك إضافته في النافذة خطوة خطوة.
+                في الأخير سنعلمك طريقة بناء تطبيقات و ألعاب باستخدام المكتبة Swing و عندها ستعرف فائدة كل شيء تعلمته
+                سابقاً في مادة
+                الخوارزميات و جافا.
+            </p>
+        </div>
+        <div id="advantage" class="ready">
+            <h2>
+                الطريقة الصحيحة للتعلم</h2>
+            <p>
+                لا تحاول تعلم Swing ما لم تتعلم الخوارزميات و جافا قبلها لأنك قد تواجه صعوبة كبيرة في فهم الكود أحياناً
+                حتى لو كان الكود
+                مشروح بتفصيل و سهل الفهم.
+
+                قم بدراسة جميع الدروس بنفس الترتيب الموضوعين فيه لأننا شرحنا جميع الأفكار بشكل مترابط.
+
+                قم بتجربة الأمثلة الموضوعة في كل درس على الكمبيوتر, و حاول كتابة الكود من جديد بنفسك و تلاعب بالكود حتى
+                تفهمه و تقتنع به
+                أكثر.
+
+                في الأخير قم بدراسة التطبيقات والألعاب التي وضعناها لأنك ستتعلم منها كيف تستفيد من كل شيء تعلمته سابقاً
+                و ستتعلم الكثير
+                من الأشياء الجديدة.
+
+                بالنسبة للبرنامج الذي ستحتاجه لبناء التطبيقات, يمكنك إستخدام برنامج Netbeans الذي شرحنا طريقة تحميله,
+                تنصيبه و إستخدامه
+                في دورة جافا.
+            </p>
+        </div>
+    </section>
+    <br>
+    <footer>
+        <div class="aim">
+            <img src="../images/harmash-logo.PNG" alt="">
+            <div class="speech">
+                <div class="grip">
+                    <h3>هدف الموقع</h3>
+                </div>
+                <p>هرمش هو موقع تعليمي مجاني يهتم بعلوم الكمبیوتر و يقدم إليك المعرفة
+                    بشكل مبسّط و مفصّل, و هو المكان المناسب لأي شخص يطمح بأن يصبح
+                    مبرمجاً محترفا و مبدعاً في العالم الرقمي.
+                </p>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="copy">
+                <i class="far fa-copyright"></i>
+                <h3> حقوق النشر</h3>
+            </div>
+            <div class="names">
+                <div>
+                    <img src="../images/abdallah.jpg" alt="">
+                    <h3>عبدالله مصطفي علي عوض</h3>
+                </div>
+                <div>
+                    <img src="../images/EzEdeen.jpg" alt="">
+                    <h3>عز الدين سالم شوقي عز الدين</h3>
+                </div>
+                <div>
+                    <img src="../images/abbdalwaness.jpg" alt="">
+                    <h3>عبدالونيس السيد عبدالونيس عبدالغني</h3>
+                </div>
+                <div>
+                    <img src="../images/Abdo.jpeg" alt="">
+                    <h3>عبده فريد عبده ابو العنين</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
