@@ -153,7 +153,7 @@ section .topics {
     line-height: 2;
  }
 
- .topics a {
+ .tap{
      background-color: #777777;
      color: white;
      padding: 5px;
