@@ -6,7 +6,7 @@
     list-style: none;
     font-family: Arial, sans-serif;
     text-decoration: none;
-    
+    scroll-behavior: smooth;
 }
 body{
     background-color: #f1f1f1;
@@ -67,6 +67,10 @@ transition: 0.8s ease;
     display: flex;
     align-items: center;
 }
+.home a:visited {
+    color: white;
+    background-color: #282a35;
+}
 .home a {
     padding: 20px 25px;
     transition: 0.8s ease;
@@ -114,11 +118,19 @@ transition: 0.8s ease;
 
 .nav ul {
     padding: 8px 0;
+    width: 100%;
 }
 .nav ul li{
     padding:  20px;
     cursor: pointer;
+    border-radius: 12px;
+    transition: 0.5s;
 }
+.nav ul li:hover{
+    background-color: #eee;
+    padding: 12px;
+}
+
 
 .ready {
     background-color: white;
@@ -218,6 +230,7 @@ footer {
 .names:hover {
 transform: translate(0,12px);
 }
+
 @keyframes sweep {
   0%    {opacity: 0; transform: translateX(-10px)}
   100%  {opacity: 1; transform: translateX(0)}
