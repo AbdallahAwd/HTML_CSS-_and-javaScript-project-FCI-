@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f1f1f1;
+      unicode-bidi:bidi-override;
+  direction:rtl;
+  animation: sweep 0.8s ease-in-out;
+}
+header {
+    background-color: #282a35;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: -5px;
+    z-index: 100;
+    justify-content: space-around;
+    color: white;
+    overflow: hidden;
+}
+header .enter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .enter div{
+    margin:0 20px;
+}
+.dark a{
+    text-decoration: none;
+    color: #00e5c2 !important;
+    font-size: 25px;
+    padding: 15px 15px;
+    transition: 0.5s ease;
+}
+.enterance:hover ,.dark a:hover{
+   background-color:#111426;
+   
+}
+.enterance {
+    color: white;
+    letter-spacing: 2px;
+    padding: 20px 5px;
+    transition: 0.5s ease;
+}
+.text {
+    display: flex;
+    align-self: center;
+}
+.text a{
+padding: 20px 25px;
+color: white;
+transition: 0.8s ease;
+}
+.text a:hover{
+ background-color:#111426;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+}
+.home a:visited {
+    color: white;
+    background-color: #282a35;
+}
+.home a {
+    padding: 20px 25px;
+    transition: 0.8s ease;
+}
+.home a:hover {
+    background-color:#111426;
+}
+section .books {
+   margin-top: 110px;
+   margin-right: 230px;
+   
+}
+.search {
+    display: flex;
+    margin-top: 40px;
+    margin-right: -80px;
+    justify-content: space-around;
+}
+.forma {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 120px;
+}
+.forma form input{
+    width: 400px;
+    margin-right: 5px;
+    height: 50px;
+}
+.forma form input::placeholder{
+    padding-right: 10px;
+    font-size: 20px;   
+}
+.forma button{
+    background-color: #f44336;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+}
+.forma button i {
+    color: white;
+    padding: 20px;
+}
+table thead th {
+    border-top:1px solid gray ;
+    border-right:1px solid gray ;
+    border-bottom:1px solid gray ;
+    padding: 18px;
+    color: #5e656b;
+    background-color: white;
+    border-spacing: 0px;
+}
+.nothing {
+    margin-top: 80px;
+    margin-right: 250px;
+    color: #5e656b;
+    margin-bottom: 30px;
+}  
+footer {
+    background-color: #000000;
+    color: white;
+}
+.aim {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.aim>img {
+    width: 150px;
+    height: 150px;
+}
+.speech {
+    margin-right: 120px;
+}
+.speech p{
+    margin-top:20px ;
+    color: #5e625a;
+    width: 450px;
+    font-size: 18px;
+}
+.grip h3{
+    margin-top:20px ;
+    color: #e9d578;
+}
+.copyright , .copy {
+    display: flex;
+    justify-content: center;
+}
+.copy i , .copy h3 {
+    color: #e9d578;
+    padding: 10px;
+}
+.names img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.names {
+    margin-top: 50px;
+    background-color: #2f2f2f;
+    border-radius: 12px;
+    transition: 1.5s;
+}
+.names div{
+    display: flex;
+    margin: 25px;
+  animation: sweep 5s ease-in-out;
+  transition: 0.8s;
+}
+.names div h3{
+    display: flex;
+    margin:40px 20px;
+}
+
+.names div:hover {
+    transform: scale(1.1);
+}
+.names:hover {
+transform: translate(0,-15px);
+}
+.q a {
+    background-color: #0d6efd;
+    color: white;
+    padding: 10px;
+    margin-top: 100px;
+    border-radius: 5px;
+    transition: 0.8s;
+}
+.q a:hover {
+    background-color: #103875;
+}
+.q {
+    display: flex;
+    justify-content: space-around;
+}
+a span {
+    font-size: 20px;
+    font-weight: 600;
+}
