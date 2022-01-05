@@ -9,11 +9,28 @@
     scroll-behavior: smooth;
 }
 body{
-    background-color: #f1f1f1;
+    background-color: var(--body-color);
       unicode-bidi:bidi-override;
   direction:rtl;
   animation: sweep 0.8s ease-in-out;
 }
+:root {
+    --body-color:#f1f1f1;
+    --font-colorb: #000000;
+    --font-colorw: white;
+    --card-color:white;
+    --title-color:#334466;
+    --title2-color:#088a4b;
+}
+.dark-theme {
+     --body-color:#000;
+   --font-colorb: #ffffff;
+    --font-colorw: rgb(212, 211, 211);
+    --card-color:#777777;
+    --title-color:#202020;
+    --title2-color:#202020;
+}
+
 header {
     background-color: #282a35;
     display: flex;
@@ -22,7 +39,7 @@ header {
     top: -5px;
     z-index: 100;
     justify-content: space-around;
-    color: white;
+    color: white !important;
     overflow: hidden;
 }
 span {
@@ -105,6 +122,9 @@ transition: 0.8s ease;
 .pub h1 {
     color: #004481;
 }
+.pub h2 {
+    color: var(--font-colorb);
+}
 .section {
     width: 57%;
     transform: translateX(-330px);
@@ -113,7 +133,7 @@ transition: 0.8s ease;
 .nav {
     display: flex;
     justify-content: start;
-    background-color: #e4e4e4;
+    background-color: var(--font-colorw);
     margin-top: 50px;
     border: 1px gray dashed;
     border-radius: 5px;
@@ -136,7 +156,7 @@ transition: 0.8s ease;
 
 
 .ready {
-    background-color: white;
+    background-color: var(--font-colorw);
     margin-top: 50px;
      padding:  30px 20px;
      border-radius: 6px;

@@ -25,6 +25,11 @@
     --title2-color:#202020;
 }
 
+#iconss {
+    width: 30px;
+    height: 30px;
+}
+
 
 body{
     background-color: var(--body-color) ;
