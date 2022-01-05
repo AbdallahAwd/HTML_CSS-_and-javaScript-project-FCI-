@@ -8,10 +8,28 @@
     text-decoration: none;
     
 }
+:root {
+    --body-color:#f1f1f1;
+    --font-colorb: #000000;
+    --font-colorw: white;
+    --card-color:white;
+    --title-color:#334466;
+    --title2-color:#088a4b;
+}
+.dark-theme {
+     --body-color:#000;
+   --font-colorb: #ffffff;
+    --font-colorw: rgb(212, 211, 211);
+    --card-color:#777777;
+    --title-color:#202020;
+    --title2-color:#202020;
+}
+
+
 body{
-    background-color: #f1f1f1;
-      unicode-bidi:bidi-override;
-  direction:rtl;
+    background-color: var(--body-color) ;
+    unicode-bidi:bidi-override;
+     direction:rtl;
 }
 header {
     background-color: #282a35;
@@ -42,7 +60,7 @@ header .enter div{
    
 }
 .enterance {
-    color: white;
+    color: white !important;
     letter-spacing: 2px;
     padding: 20px 5px;
     transition: 0.5s ease;
@@ -53,7 +71,7 @@ header .enter div{
 }
 .text a{
 padding: 20px 25px;
-color: white;
+color: white !important;
 transition: 0.8s ease;
 }
 .text a:hover{
@@ -66,6 +84,7 @@ transition: 0.8s ease;
 }
 .home a {
     padding: 20px 25px;
+    color: white !important;
     transition: 0.8s ease;
 }
 .home a:hover {
@@ -77,10 +96,11 @@ transition: 0.8s ease;
 }
 .discrip h2 {
     margin-bottom: 40px;
+    color: var(--font-colorb);
     font-size: 28px;
 }
 .discrip p {
-    color: #595150;
+    color: var(--font-colorb);
     font-size: 18px;
     letter-spacing: 1px;
 }
@@ -100,7 +120,7 @@ transition: 0.8s ease;
   overflow: hidden;
   flex-direction: column;
   border-radius: 12px;
-  background-color: #fff;
+  background-color: var(--card-color);
   box-shadow: 0px 5px 9px 3px rgb(1 1 1 / 20%);
   margin: 30px 10px;
   transition: 0.8s ease;
@@ -121,17 +141,22 @@ transition: 0.8s ease;
   /* transform: scale(1.05); */
     transform: translate(0,-25px);
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) ;
-    background-color: #f2efe3ff;
+    opacity: 0.9;
+    background-color: var(--card-color);
 }
 .info {
     text-align: center;
+    color: var(--font-colorb);
+}
+a {
+    color: var(--font-colorb) !important;
 }
 .title {
     text-align: center;
-    color: white;
+    color: var(--font-colorw);
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-    background-color: #334466;
+    background-color: var(--title-color);
     padding: 20px;
    
      
@@ -159,6 +184,7 @@ transition: 0.8s ease;
 }
 .discription h2{
 margin-bottom: 20px;
+color: var(--font-colorb);
 }
 .discription p {
     font-size: 18px;
@@ -167,13 +193,13 @@ margin-bottom: 20px;
      display: inline-block;
 }
 .courses .title {
-    background-color: #088a4b;
+    background-color: var(--title2-color);
     width: 100%;
 }
 .explan > h4 , .info > P{
     text-align: center;
     padding: 10px;
-    color: #5b5b5b;
+    color: var(--font-color);
 }
 
 footer {
